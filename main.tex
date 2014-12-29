@@ -1,0 +1,541 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 1.4 (12/4/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Compiling this template:
+% This template uses biber for its bibliography and makeindex for its index.
+% When you first open the template, compile it from the command line with the 
+% commands below to make sure your LaTeX distribution is configured correctly:
+%
+% 1) pdflatex main
+% 2) makeindex main.idx -s StyleInd.ist
+% 3) biber main
+% 4) pdflatex main x 2
+%
+% After this, when you wish to update the bibliography/index use the appropriate
+% command above and make sure to compile with pdflatex several times 
+% afterwards to propagate your changes to the document.
+%
+% This template also uses a number of packages which may need to be
+% updated to the newest versions for the template to compile. It is strongly
+% recommended you update your LaTeX distribution if you have any
+% compilation errors.
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% Bibliography
+%\usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+%\addbibresource{bibliography.bib} % BibTeX bibliography file
+%\defbibheading{bibempty}{}
+
+% Index
+\usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
+\usepackage{makeidx} % Required to make an index
+\makeindex % Tells LaTeX to create the files required for indexing
+
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+%----------------------------------------------------------------------------------------
+% Added for dschungelbuch
+
+\usepackage{eurosym}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{csquotes}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(6,5){\includegraphics[scale=1]{background}}} % Image background
+\centering
+\vspace*{9cm}
+\par\normalfont\fontsize{35}{35}\sffamily\selectfont
+Dschungelbuch Siegen\\ {\LARGE Information für Menschen mit wenig Geld in und um Siegen}\par % Book title
+\vspace*{1cm}
+{\Huge Siegener mit Herz und Verstand}\par % Author name
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Kein Copyright / no \copyright. Kopieren und Verteilen ausdrücklich erlaubt.\\ % Copyright notice
+
+\noindent \textsc{Published by Klaus Reifenrath}\\ % Publisher
+
+\noindent \textsc{www.krwe.de, klaus@krwe.de}\\ % URL
+
+%\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+
+%\noindent \textit{First printing, March 2013} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1 Essen
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Nahrung} \index{Nahrung} \index{Ernährung} \index{Essen}
+
+\section{Siegener Tafel e.~V.} \index{Nahrung} \index{Ernährung} \index{Essen}
+Stand: 2014-12-29\\
+Unsere Hauptausgabestelle der Lebensmittel befindet sich in Siegen, in der Bismarckstraße 90. Ausgabetage sind dienstags und donnerstags ab 13.30 Uhr. Die Bedürftigkeit muss schriftlich nachgewiesen werden:\\
+\\
+Sozialhilfeempfänger\\
+Hartz IV Empfänger\\
+Jugendliche mit geringem Einkommen\\
+Senioren mit geringer Rente\\
+Bezieher von Erwerbsunfähigkeitsrente\\
+Geringverdienende\\
+Ehemalige Selbständige ohne Einkommen und andere Bedürftige\\
+Studenten\\
+\\
+Siegener Tafel e.~V.\\
+Bismarckstraße 90\\
+57072 Siegen\\
+Telefon: 0271/2384520\\
+Mobil: 0172/7371546\\
+E-Mail: \href{mailto:info@siegener-tafel.de}{info@siegener-tafel.de}\\
+Internet: \href{http://siegener-tafel.de}{http://siegener-tafel.de}\\
+\\
+13 Außenstellen in Siegen und den Randgebieten kommen noch hinzu. Hier kommen unsere Lebensmittel 1x wöchentlich zur Verteilung. 
+\begin{enumerate}
+	\item Hilchenbacher Tisch
+	\item Freudenberger Tisch
+	\item Fischbacherberg Tisch
+	\item Netpher Tisch
+	\item Verein für Christliche Gemeinschaftspflege
+	\item Alf Kaan Marienborn
+	\item Alf Kreuztal
+	\item Frauenhaus Siegen
+	\item Pestalozzischule
+	\item Kita Rast Am Sender
+	\item Ev. Frauenhilfe West.ev (Tafel deck dich)
+	\item Neunkirchener Tafel
+	\item Betzdorfer Tafel 
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2 Fortbewegung
+%----------------------------------------------------------------------------------------
+
+\chapter{Fortbewegung}
+
+\section{MobilitätsCard}\index{MobilitätsCard}\index{Sozialticket}
+
+Das Sozialticket der Verkehrsgemeinschaft Westfalen-Süd (VGWS) heißt MobilitätsCard. \\
+\\
+Die MobilitätsCard kann unbürokratisch beim ZWS beantragt werden. Hierzu ist ein Faltblatt erstellt worden, das in übersichtlicher Form die grundlegenden Informationen zur Antragsstellung sowie den Antragsvordruck enthält. Dieses Faltblatt ist bei den Kreisen Olpe und Siegen-Wittgenstein, den Bürgerbüros bzw. Sozialämtern der Städte und Gemeinden, den Jobcentern und weiteren Sozialstationen erhältlich.\\
+\\
+Die MobilitätsCard richtet sich an Bezieher von Arbeitslosengeld II oder Sozialgeld nach dem Sozialgesetzbuch II der Jobcenter Olpe/Siegen-Wittgenstein, an Bezieher von Hilfe zum Lebens-unterhalt oder Grundsicherung im Alter sowie bei voller Erwerbsminderung nach dem Sozialgesetz-buch XII von den Sozialämtern der Städte und Gemeinden im Kreis Olpe/Siegen-Wittgenstein. Darüber hinaus an Bezieher von Hilfe zum Lebensunterhalt nach dem Bundesver\-sorgungsgesetz und Bezieher von Leistungen nach dem Asylbewerberleistungsgesetz von den Städten und Gemeinden im Kreis Olpe/Siegen-Wittgenstein.\\
+\\
+Die MobilitätsCard bietet einen ganzen Monat Mobilität im gesamten Binnennetz der Verkehrs-gemeinschaft Westfalen-Süd (VGWS) in Bus und Bahn (2. Klasse) im gesamten Kreisgebiet Olpe sowie Siegen-Wittgenstein. Eine zeitliche Einschränkung innerhalb des Gültigkeitsmonats gibt es nicht.\\
+\\
+Sie enthält jeweils montags bis freitags ab 19.00 Uhr bis zum Betriebsende (Schienenverkehr bis 3.00 Uhr bzw. auf den Nachtbuslinien bis 5.00 Uhr des Folgetages) eine sogenannte Mitnahmeregelung, wonach ohne weitere Kosten bis zu 4 weitere Fahrgäste oder alternativ Fahrräder mitgenommen werden können. Diese Regelung gilt auch samstags, sonntags und an Feiertagen sowie am 24. und 31.12. ohne zeitliche Einschränkung.\\
+\\
+Dieses Angebot kostet den Berechtigten einen monatliche 29,90 \euro.\\
+\\
+Ihre Ansprechpartner bei Rückfragen:\\
+\\
+Beate Stirnberg\\
+Telefon: 0271 333-2435\\
+Telefax: 0271 333-2430\\
+E-Mail: b.stirnberg@zws-online.de\\
+Internet: www.zws-online.de\\
+\\
+Thomas Wagner\\
+Telefon: 0271 333-2438\\
+Telefax: 0271 333-2430\\
+E-Mail: wagner@zws-online.de\\
+Internet: www.zws-online.de\\
+\\
+ZWS\\
+Zweckverband Personennahverkehr Westfalen-Süd\\
+Koblenzer Straße 73\\
+57072 Siegen\\
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER ?
+%----------------------------------------------------------------------------------------
+
+\chapter{Alter}
+
+\section{Älter werden in Siegen}\index{Alter}
+Stand: 2014-12-28: Handbuch \enquote{Älter werden in Siegen} mit vielen Tipps, Adressen und AnsprechpartnerInnen. Im Bürgerbüro oder im Internet:  \href{http://www.siegen.de/ols/page.sys/formularID=588/282.htm}{http://www.siegen.de/ols/page.sys/formularID=588/282.htm} 
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER ?
+%----------------------------------------------------------------------------------------
+
+\chapter{Einsamkeit}
+
+\section{GEGEN-ÜBER Begegnungs- und Beratungsstelle}\index{Gegen-über}
+Das ist die Begegnungs- und Beratungsstelle der Diakonie. Als Anlaufstelle für jedermann bietet sie die Möglichkeit, sich zu begegnen, alleine oder mit anderen etwas zu unternehmen oder einfach nur mal unter Menschen zu sein. Was bieten sie an?
+
+\begin{itemize}
+	\item Begegnung
+	\item Beratung
+	\item Kaffee und Snacks
+	\item Kostenfreie Freizeitangebote: Kicker \& Billard
+	\item PC und Internet
+	\item Zeitung lesen
+	\item Musik hören
+	\item gemeinsam kochen und backen
+	\item kreatives Gestalten
+	\item Musik selber machen
+	\item Gesprächsgruppen
+	\item Bewegung
+	\item Sport
+\end{itemize}
+
+Die Begegnungsstätte ist dienstags von 15 bis 18 Uhr geöffnet. Nach Absprache und aktuellem Programm kommen weitere Öffnungszeiten hinzu.\\
+\\
+Die Beratungsstelle ist montags, mittwochs und freitags von 14 bis 17 Uhr und nach Vereinbarung geöffnet.\\
+\\
+Sozialdienste \\
+Friedrichstraße 18\\
+57072 Siegen\\
+Telefon: 02 71 - 50 03 0 \\
+
+\section{Stolperstein Verein für praktizierte Gastfreundschaft e.V.}\index{Stolperstein}\index{Gastfreundschaft}
+Stand: 2014-12-28: Keiner soll ausgegrenzt werden, weil er kein Geld hat, eine Behinderung erlebt oder meint, man mag ihn nicht. Sie werden beu uns nicht bgedrängt. Sie dürfen auch einfach \enquote{da sein}. Sie gehen keine Verpflichtung ein. Es gibt keinen Eintrittspreis oder Verzehrzwang. Sie können anonym bleiben, aber Sie müssen es nicht. Wir meinen, Einsamkeit nimmt in unserer Zeit zu. Dem wollen wir etwas engegensetzen. Wir tun dies ehrenamtlich.\\
+Gastlichkeit bei Kaffee und anderen alkoholfreien Getrönken, ab und zu mir Snack. Billad. Darts und andere Spiele, nie um Geld und nicht mit Automaten.\\
+Öffnungszeiten: Freitags von 17:00 bis 21:00 Uhr Sa, von  17:00 bis 21:00 Uhr So. von 15:00 bis 19:00 Uhr. Getränke ab 40 Cent. Frühstück: Donnerstag von 09:00 bis 12:00 Uhr 2,- \euro \\
+\\
+Freudenberger Straße 16\\
+57072 Siegen\\
+Telefon: 02 71/2 38 19 19\\
+E-Mail: \href{mailto:info@stolperstein-siegen.de}{info@stolperstein-siegen.de}
+Internet: \href{http://www.stolperstein-siegen.de}{http://www.stolperstein-siegen.de} 
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER X
+%----------------------------------------------------------------------------------------
+
+\chapter{Kleidung}
+
+\section{Der Laden, Kleidung und mehr}\index{Kleidung}
+Stand: 2014-12-29: Der Bezirksverband der Siegerländer Frauenhilfe betreibt den Kleiderladen seit Januar 2013. Wir bieten Ihnen in einem angenehmen Ambiente gut erhaltene Gebrauchtwaren zu erschwinglichen Preisen. Stöbern ist ausdrücklich erwünscht. Lassen Sie sich durch unser ständig wechselndes Angebot überraschen.\\
+\\
+Bezirksverband der Siegerländer Frauenhilfen e.V. 
+Stand: 2014-12-28: Öffnungszeiten: \\
+Montag: 10:00 Uhr - 16:00 Uhr\\
+Dienstag: 10:00 Uhr - 16:00 Uhr\\
+Mittwoch: 10:00 Uhr - 18:00 Uhr\\
+Donnerstag: 10:00 Uhr - 16:00 Uhr\\
+Freitag: 10.00 - 13.00\\
+\\
+Friedrichstraße 27\\
+57072 Siegen\\
+Telefon: 02 71 / 50 03 - 10 5\\
+Internet: \href{http://kleiderladen-siegen.de/}{http://kleiderladen-siegen.de/}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER X
+%----------------------------------------------------------------------------------------
+
+\chapter{ENDE}
+
+%------------------------------------------------
+
+\section{Citation}\index{Citation}
+
+This statement requires citation \cite{book_key}; this one is more specific \cite[122]{article_key}.
+
+%------------------------------------------------
+
+\section{Lists}\index{Lists}
+
+Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
+
+\subsection{Numbered List}\index{Lists!Numbered List}
+
+\begin{enumerate}
+\item The first item
+\item The second item
+\item The third item
+\end{enumerate}
+
+\subsection{Bullet Points}\index{Lists!Bullet Points}
+
+\begin{itemize}
+\item The first item
+\item The second item
+\item The third item
+\end{itemize}
+
+\subsection{Descriptions and Definitions}\index{Lists!Descriptions and Definitions}
+
+\begin{description}
+\item[Name] Description
+\item[Word] Definition
+\item[Comment] Elaboration
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+
+\chapter{In-text Elements}
+
+\section{Theorems}\index{Theorems}
+
+This is an example of theorems.
+
+\subsection{Several equations}\index{Theorems!Several Equations}
+This is a theorem consisting of several equations.
+
+\begin{theorem}[Name of the theorem]
+In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{theorem}
+
+\subsection{Single Line}\index{Theorems!Single Line}
+This is a theorem consisting of just one line.
+
+\begin{theorem}
+A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
+\end{theorem}
+
+%------------------------------------------------
+
+\section{Definitions}\index{Definitions}
+
+This is an example of a definition. A definition could be mathematical or it could define a concept.
+
+\begin{definition}[Definition name]
+Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, $E$ in $\mathbb{R}^+=[0,+\infty[$ such that:
+\begin{align}
+& ||\mathbf{x}||=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
+& ||\lambda \mathbf{x}||=|\lambda|\cdot ||\mathbf{x}||\\
+& ||\mathbf{x}+\mathbf{y}||\leq ||\mathbf{x}||+||\mathbf{y}||
+\end{align}
+\end{definition}
+
+%------------------------------------------------
+
+\section{Notations}\index{Notations}
+
+\begin{notation}
+Given an open subset $G$ of $\mathbb{R}^n$, the set of functions $\varphi$ are:
+\begin{enumerate}
+\item Bounded support $G$;
+\item Infinitely differentiable;
+\end{enumerate}
+a vector space is denoted by $\mathcal{D}(G)$. 
+\end{notation}
+
+%------------------------------------------------
+
+\section{Remarks}\index{Remarks}
+
+This is an example of a remark.
+
+\begin{remark}
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{remark}
+
+%------------------------------------------------
+
+\section{Corollaries}\index{Corollaries}
+
+This is an example of a corollary.
+
+\begin{corollary}[Corollary name]
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{corollary}
+
+%------------------------------------------------
+
+\section{Propositions}\index{Propositions}
+
+This is an example of propositions.
+
+\subsection{Several equations}\index{Propositions!Several Equations}
+
+\begin{proposition}[Proposition name]
+It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{proposition}
+
+\subsection{Single Line}\index{Propositions!Single Line}
+
+\begin{proposition} 
+Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$. 
+\end{proposition}
+
+%------------------------------------------------
+
+\section{Examples}\index{Examples}
+
+This is an example of examples.
+
+\subsection{Equation and Text}\index{Examples!Equation and Text}
+
+\begin{example}
+Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
+\begin{equation}
+f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
+& 0 & & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+\end{equation}
+The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
+\end{example}
+
+\subsection{Paragraph of Text}\index{Examples!Paragraph of Text}
+
+\begin{example}[Example name]
+\lipsum[2]
+\end{example}
+
+%------------------------------------------------
+
+\section{Exercises}\index{Exercises}
+
+This is an example of an exercise.
+
+\begin{exercise}
+This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
+\end{exercise}
+
+%------------------------------------------------
+
+\section{Problems}\index{Problems}
+
+\begin{problem}
+What is the average airspeed velocity of an unladen swallow?
+\end{problem}
+
+%------------------------------------------------
+
+\section{Vocabulary}\index{Vocabulary}
+
+Define a word to improve a students' vocabulary.
+
+\begin{vocabulary}[Word]
+Definition of word.
+\end{vocabulary}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_1.pdf} % Chapter heading image
+
+\chapter{Presenting Information}
+
+\section{Table}\index{Table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Table caption}
+\end{table}
+
+%------------------------------------------------
+
+\section{Figure}\index{Figure}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.5]{placeholder}
+\caption{Figure caption}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
+\section*{Books}
+\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+\section*{Articles}
+\addcontentsline{toc}{section}{Articles}
+%\printbibliography[heading=bibempty,type=article]
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\printindex
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
